@@ -6,13 +6,10 @@
   "types": "dist/index.d.ts",
   "type": "module",
   "scripts": {
-    "build": "npx npm-run-all clean compile types",
     "clean": "node -e \"require('node:fs').rmSync('dist', { force: true, recursive: true });\"",
     "compile": "npx esbuild index.ts --bundle --outdir=dist --platform=neutral --external:react",
-    "prepublishOnly": "npm run build",
-    "preversion": "npx npm-run-all shape build",
-    "shape": "npx codeshape --typecheck",
-    "types": "tsc --emitDeclarationOnly"
+    "preversion": "npx npm-run-all clean shape compile",
+    "shape": "npx codeshape --typecheck --emit-types"
   },
   "repository": {
     "type": "git",
@@ -29,7 +26,6 @@
     "react": ">=16.8"
   },
   "devDependencies": {
-    "@types/react": "^19.2.7",
-    "typescript": "^5.9.3"
+    "@types/react": "^19.2.7"
   }
 }
