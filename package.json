@@ -2,14 +2,12 @@
   "name": "@t8/react-client-only",
   "version": "1.0.1",
   "description": "A lightweight React component and a hook to render content on the client and skip SSR",
-  "main": "dist/index.js",
-  "types": "dist/index.d.ts",
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
   "type": "module",
   "scripts": {
-    "clean": "node -e \"require('node:fs').rmSync('dist', { force: true, recursive: true });\"",
-    "compile": "npx esbuild index.ts --bundle --outdir=dist --platform=neutral --external:react",
-    "preversion": "npx npm-run-all clean shape compile",
-    "shape": "npx codeshape --typecheck --emit-types"
+    "preversion": "npx codeshape"
   },
   "repository": {
     "type": "git",
