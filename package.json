@@ -1,6 +1,6 @@
 {
   "name": "@t8/react-client-only",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "A lightweight React component and a hook to render content on the client and skip SSR",
   "main": "./dist/index.cjs",
   "module": "./dist/index.mjs",
