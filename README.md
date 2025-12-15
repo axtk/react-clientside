@@ -1,6 +1,6 @@
 # @t8/react-client-only
 
-*A lightweight React component and a hook to render content on the client and skip SSR*
+A lightweight React component and a hook to render content on the client and skip SSR
 
 [![npm](https://img.shields.io/npm/v/@t8/react-client-only?labelColor=345&color=46e)](https://www.npmjs.com/package/@t8/react-client-only) ![Lightweight](https://img.shields.io/bundlephobia/minzip/@t8/react-client-only?label=minzip&labelColor=345&color=46e)
 
