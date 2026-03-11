@@ -4,24 +4,25 @@ A lightweight React component and a hook to render content on the client and ski
 
 ## `<ClientOnly>`
 
-```js
+```jsx
 import { ClientOnly } from "react-clientside";
 
 export const Component = () => {
-  return <ClientOnly>This is skipped during SSR</ClientOnly>;
+  return <ClientOnly>Skipped during SSR</ClientOnly>;
 };
 ```
 
-With a fallback to be rendered during SSR, which can be any `ReactNode`:
+Or with a fallback to be rendered during SSR, which can be any `ReactNode`:
 
-```diff
-- <ClientOnly>This is skipped during SSR</ClientOnly>;
-+ <ClientOnly fallback={<Fallback/>}>This has a fallback during SSR</ClientOnly>;
+```jsx
+export const Component = () => {
+  return <ClientOnly fallback="SSR content">CSR content</ClientOnly>;
+};
 ```
 
 ## `useClientOnly()`
 
-```js
+```jsx
 import { useClientOnly } from "react-clientside";
 
 export const Component = () => {
