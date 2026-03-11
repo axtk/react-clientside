@@ -1,11 +1,11 @@
-# @t8/react-client-only
+# react-clientside
 
 A lightweight React component and a hook to render content on the client and skip SSR
 
 ## `<ClientOnly>`
 
 ```js
-import { ClientOnly } from "@t8/react-client-only";
+import { ClientOnly } from "react-clientside";
 
 export const Component = () => {
   return <ClientOnly>This is skipped during SSR</ClientOnly>;
@@ -22,7 +22,7 @@ With a fallback to be rendered during SSR, which can be any `ReactNode`:
 ## `useClientOnly()`
 
 ```js
-import { useClientOnly } from "@t8/react-client-only";
+import { useClientOnly } from "react-clientside";
 
 export const Component = () => {
   let isClient = useClientOnly();

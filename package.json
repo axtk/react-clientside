@@ -1,5 +1,5 @@
 {
-  "name": "@t8/react-client-only",
+  "name": "react-clientside",
   "version": "1.0.4",
   "description": "A lightweight React component and a hook to render content on the client and skip SSR",
   "main": "./dist/index.cjs",
@@ -11,7 +11,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/t8js/react-client-only.git"
+    "url": "git+https://github.com/axtk/react-clientside.git"
   },
   "keywords": [
     "react",
