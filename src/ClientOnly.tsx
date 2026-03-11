@@ -13,5 +13,5 @@ export type ClientOnlyProps = {
 export const ClientOnly = ({ children, fallback = null }: ClientOnlyProps) => {
   let isClient = useClientOnly();
 
-  return isClient ? children : fallback;
+  return <>{isClient ? children : fallback}</>;
 };
