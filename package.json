@@ -16,6 +16,7 @@
   "keywords": [
     "react",
     "client only",
+    "csr",
     "ssr"
   ],
   "author": "axtk",
