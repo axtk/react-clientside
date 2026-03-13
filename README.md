@@ -2,7 +2,7 @@
 
 Utilities to render content on the client and skip SSR in a React app
 
-This package distinguishes two ways of detecting client-side rendering, primarily to avoid hydration mismatch errors: when a component is mounted and when it's hydrated. Whether a component is mounted is checked with `useEffect` under the hood that runs a [two-pass rendering](https://react.dev/reference/react-dom/client/hydrateRoot#handling-different-client-and-server-content) which may introduce a delay before rendering the required content. Checking whether a component is hydrated seeks to eliminate the delay on subsequent renders.
+This package distinguishes two ways of detecting client-side rendering, primarily to avoid hydration mismatch errors: when a component is mounted and when it's hydrated. Whether a component is mounted is checked with `useEffect` under the hood that runs a two-pass rendering<sup>[[1](https://react.dev/reference/react-dom/client/hydrateRoot#handling-different-client-and-server-content)]</sup> which may introduce a delay before rendering the required content. Checking whether a component is hydrated seeks to eliminate the delay on subsequent renders.
 
 ## useMounted
 
