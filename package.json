@@ -15,7 +15,9 @@
   },
   "keywords": [
     "react",
+    "client-side",
     "client only",
+    "hydration",
     "csr",
     "ssr"
   ],
