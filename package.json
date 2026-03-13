@@ -1,6 +1,6 @@
 {
   "name": "react-clientside",
-  "version": "1.1.1",
+  "version": "2.0.0",
   "description": "Utilities to render content on the client and skip SSR in a React app",
   "main": "./dist/index.cjs",
   "module": "./dist/index.mjs",
