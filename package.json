@@ -1,7 +1,7 @@
 {
   "name": "react-clientside",
   "version": "1.1.1",
-  "description": "A lightweight React component and a hook to render content on the client and skip SSR",
+  "description": "Utilities to render content on the client and skip SSR in a React app",
   "main": "./dist/index.cjs",
   "module": "./dist/index.mjs",
   "types": "./dist/index.d.ts",
