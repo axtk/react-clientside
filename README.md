@@ -14,7 +14,7 @@ import { useMounted } from "react-clientside";
 export const Component = () => {
   let isMounted = useMounted();
 
-  return <p hidden={!isClient}>Hidden unless mounted on the client</p>;
+  return <p hidden={!isMounted}>Hidden unless mounted on the client</p>;
 };
 ```
 
